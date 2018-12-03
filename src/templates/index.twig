@@ -1,0 +1,32 @@
+
+<html>
+<head>
+	{% include "components/head.twig" %}
+</head>
+<body>
+	{% include "components/header.twig" %}
+
+	<div id="content">
+		
+		<div class="container d-flex p-md-0">
+			<div class="col-md-8 p-0 pr-md-3">
+				<!-- .left_column -->
+				<div class="left_column">
+					{% include "components/main.twig" %}
+				</div>
+				<!-- /.left_column -->
+			</div>
+			<div class="col-md-4 p-0 d-none d-md-block">
+				<!-- .right_column -->
+				<div class="right_column">
+					{% include "components/sidebar.twig" %}
+				</div>
+				<!-- /.right_column -->
+			</div>
+		</div>
+
+	</div>
+	
+	{% include "components/footer.twig" %}
+</body>
+</html>
